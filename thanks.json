@@ -1,0 +1,22 @@
+{
+   "type":"CoreCell",
+   "properties":{
+      "disclosure":true,
+      "icon":"card"
+   },
+   "events":[
+      {
+         "cmd":"EVENT",
+         "name":"select"
+      }
+   ],
+   "fields":[
+      {
+         "id":"selectedFavorCode",
+         "value":"UP_TO_3_GOLD_CARDS",
+         "title":"До 3 золотых карт Visa",
+         "type":"text",
+         "description":"С бесплатным обслуживанием"
+      }
+   ]
+}
