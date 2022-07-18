@@ -27,13 +27,12 @@
                                     {
                                         "id": "id:CoreTitle",
                                         "type": "text",
-                                        "style": "subheader",
+                                        "style": "Стиль",
                                         "title": "Перевод бонусов",
-                                        "description": "Ваш баланс 3000 Б"
+                                        "description":"Ваш баланс 3000 Б"
                                     }
                                 ]
-                                    
-                           }, {
+                            }, {
                                 "type":"CoreCell",
                                 "properties":{
                                     "disclosure":true,
@@ -83,7 +82,7 @@
                                     "disclosure":true,
                                     "icon":"document",
                                     "devider":"bold",
-                                    "caption":"Подробнее"
+                                    "caption":"По курсу 1 = 0.9"
                                 },
                                 "events":[
                                     {
