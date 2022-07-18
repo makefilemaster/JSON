@@ -16,7 +16,7 @@
                            "title": "CoreFieldSet: text",
                            "header": [{
                                "type": "CoreNavBar",
-                               "title": "CoreFieldSet: text",
+                               "title": "CoreAgreement",
                                "events": [{
                                    "cmd": "EXIT"
                                }]
@@ -99,7 +99,33 @@
                                      "description":"Будет переведено"
                                     }
                                 ]
-                            }]
+                            }],
+                           "footer": [
+                                {
+
+                                    "type":"CoreAgreement",
+                                    "title":"Документы",
+                                    "description": "pdf, md и требуется просмотр всех документов",
+                                    "properties": {},
+                                    "fields": [
+                                        {
+                                            "id": "agreement",
+                                            "value": "false",
+                                            "type": "checkbox",
+                                            "referenceId": "agreement",
+                                            "title": "Я согласен с <a>условиями предоставления услуги</a>",
+                                            "validators": [
+                                                {
+                                                    "type": "required",
+                                                    "value": "true",
+                                                    "message": "Вы не согласились с лицензионным соглашением"
+                                                }
+                                            ]
+                                        }
+                                    ]
+
+                                }
+                           ]
                         }]
                     }
                 }
