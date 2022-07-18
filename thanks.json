@@ -22,6 +22,18 @@
                                }]
                            }],
                            "widgets": [{
+                                "type": "CoreTitle",
+                                "fields": [
+                                    {
+                                        "id": "id:CoreTitle",
+                                        "type": "text",
+                                        "style": "subheader",
+                                        "title": "Перевод бонусов",
+                                        "description": "Ваш баланс 3000 Б"
+                                    }
+                                ]
+                                    
+                           }, {
                                 "type":"CoreCell",
                                 "properties":{
                                     "disclosure":true,
