@@ -26,7 +26,7 @@
                                 "properties":{
                                     "disclosure":true,
                                     "icon":"document",
-                                    "devider":"default"
+                                    "devider":"bold"
                                 },
                                 "events":[
                                     {
@@ -48,7 +48,7 @@
                                 "properties":{
                                     "disclosure":true,
                                     "icon":"document",
-                                    "devider":"default"
+                                    "devider":"bold",
                                 },
                                 "events":[
                                     {
@@ -70,7 +70,8 @@
                                 "properties":{
                                     "disclosure":true,
                                     "icon":"document",
-                                    "devider":"default"
+                                    "devider":"bold",
+                                    "caption":"Подробнее"
                                 },
                                 "events":[
                                     {
@@ -85,12 +86,6 @@
                                      "title":"90 бонусов",
                                      "type":"text",
                                      "description":"Будет переведено"
-                                    }, {
-                                     "id":"FIO",
-                                     "value":"UP_TO_3_GOLD_CARDS",
-                                     "title":"",
-                                     "type":"text",
-                                     "description":"По курсу 1 = 0.9"
                                     }
                                 ]
                             }]
