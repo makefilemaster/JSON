@@ -25,7 +25,8 @@
                                 "type":"CoreCell",
                                 "properties":{
                                     "disclosure":true,
-                                    "icon":"card"
+                                    "icon":"document",
+                                    "devider":"default"
                                 },
                                 "events":[
                                     {
@@ -35,11 +36,55 @@
                                 ],
                                 "fields":[
                                     {
-                                     "id":"selectedFavorCode",
+                                     "id":"FIO",
                                      "value":"UP_TO_3_GOLD_CARDS",
-                                     "title":"До 3 золотых карт Visa",
+                                     "title":"Николай Второй",
                                      "type":"text",
-                                     "description":"С бесплатным обслуживанием"
+                                     "description":"+7 (903) 712-25-12"
+                                    },
+                                    {
+                                "type":"CoreCell",
+                                "properties":{
+                                    "disclosure":true,
+                                    "icon":"document",
+                                    "devider":"default"
+                                },
+                                "events":[
+                                    {
+                                        "cmd":"EVENT",
+                                        "name":"select"
+                                    }
+                                ],
+                                "fields":[
+                                    {
+                                     "id":"FIO",
+                                     "value":"UP_TO_3_GOLD_CARDS",
+                                     "title":"100 бонусов",
+                                     "type":"text",
+                                     "description":"Спишется"
+                                    },
+                                    {
+                                "type":"CoreCell",
+                                "properties":{
+                                    "disclosure":true,
+                                    "icon":"document",
+                                    "devider":"default"
+                                },
+                                "events":[
+                                    {
+                                        "cmd":"EVENT",
+                                        "name":"select"
+                                    }
+                                ],
+                                "fields":[
+                                    {
+                                     "id":"FIO",
+                                     "value":"UP_TO_3_GOLD_CARDS",
+                                     "title":"Николай Второй",
+                                     "type":"text",
+                                     "description":"90 бонусов будет переведено"
+                                     "type":"text",
+                                     "description":"По курсу 1 = 0.9"
                                     }
                                 ]
                             }]
