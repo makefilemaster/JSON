@@ -41,8 +41,9 @@
                                      "title":"Николай Второй",
                                      "type":"text",
                                      "description":"+7 (903) 712-25-12"
-                                    },
-                                    {
+                                    }
+                                ]
+                            }, {
                                 "type":"CoreCell",
                                 "properties":{
                                     "disclosure":true,
@@ -62,8 +63,9 @@
                                      "title":"100 бонусов",
                                      "type":"text",
                                      "description":"Спишется"
-                                    },
-                                    {
+                                    }
+                                ]
+                            }, {
                                 "type":"CoreCell",
                                 "properties":{
                                     "disclosure":true,
@@ -80,9 +82,13 @@
                                     {
                                      "id":"FIO",
                                      "value":"UP_TO_3_GOLD_CARDS",
-                                     "title":"Николай Второй",
+                                     "title":"90 бонусов",
                                      "type":"text",
-                                     "description":"90 бонусов будет переведено"
+                                     "description":"Будет переведено"
+                                    }, {
+                                     "id":"FIO",
+                                     "value":"UP_TO_3_GOLD_CARDS",
+                                     "title":"",
                                      "type":"text",
                                      "description":"По курсу 1 = 0.9"
                                     }
