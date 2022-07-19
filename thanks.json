@@ -147,7 +147,32 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "references": {
+                "agreement": {
+                  "properties": {
+                    "requireVisitAll": true
+                  },
+                  "items": [
+                    {
+                      "title": "Документ в формате PDF 1",
+                      "value": "agreement-pdf-1",
+                      "properties": {
+                        "format": "pdf",
+                        "src": "http://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf"
+                      }
+                    },
+                    {
+                      "title": "Документ в формате PDF 2",
+                      "value": "agreement-pdf-2",
+                      "properties": {
+                        "format": "pdf",
+                        "src": "http://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf"
+                      }
+                    }
+                  ]
+                }
+              }
             }
           }
         }
