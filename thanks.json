@@ -87,7 +87,7 @@
                     },
                     {
                       "type": "CoreCell",
-                      "disclosure":true,
+                      "disclosure":false,
                       "readonly":true,
                       "properties": {
                         "disclosure": true,
@@ -95,12 +95,6 @@
                         "devider": "bold",
                         "caption": "По курсу 1 = 0.9"
                       },
-                      "events": [
-                        {
-                          "cmd": "EVENT",
-                          "name": "select"
-                        }
-                      ],
                       "fields": [
                         {
                           "id": "FIO",
