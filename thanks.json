@@ -95,8 +95,8 @@
                       },
                       "events": [
                         {
-                          "cmd": "EVENT",
-                          "name": "select"
+                          //"cmd": "EVENT",
+                          //"name": "select"
                         }
                       ],
                       "fields": [
