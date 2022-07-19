@@ -87,6 +87,8 @@
                     },
                     {
                       "type": "CoreCell",
+                      "disclosure":true,
+                      "readonly":true,
                       "properties": {
                         "disclosure": true,
                         "icon": "document",
@@ -95,8 +97,8 @@
                       },
                       "events": [
                         {
-                          //"cmd": "EVENT",
-                          //"name": "select"
+                          "cmd": "EVENT",
+                          "name": "select"
                         }
                       ],
                       "fields": [
@@ -104,6 +106,7 @@
                           "id": "FIO",
                           "value": "UP_TO_3_GOLD_CARDS",
                           "title": "90 бонусов",
+                          "readonly":true,
                           "type": "text",
                           "description": "Будет переведено"
                         }
