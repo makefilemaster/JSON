@@ -9,20 +9,21 @@
           "body": {
             "result": "SUCCESS",
             "pid": "80c30504-e9ac-4f63-9d9c-f31cce9f5ae5",
-            "flow": "DSNWidgetSandbox",
-            "state": "widgets",
+            "flow": "Example",
+            "state": "paymentInfo",
             "output": {
               "screens": [
                 {
-                  "title": "Виджеты",
-                  "type": "DSNScreen",
+                  "title": "Пример",
+                  "description": "Пример description",
                   "header": [
                     {
                       "type": "CoreNavBar",
-                      "title": "Виджеты",
+                      "title": "Данные о взносе",
                       "events": [
                         {
                           "cmd": "EXIT",
+                          "uri": "Диплинк на предыдущий экран",
                           "title": "На предыдущий экран",
                           "description": "Переход на предыдущий экран"
                         }
@@ -31,42 +32,121 @@
                   ],
                   "widgets": [
                     {
-                      "type": "CoreRange",
-                      "properties": {
-                        "prefix": "",
-                        "suffix": " ₽",
-                        "step": 10,
-                        "minValue": 0,
-                        "maxValue": 1000000
-                      },
+                      "type": "CoreSuggest",
+                      "strategies": [
+                        {
+                          "fieldLookupId": "suggestText:1",
+                          "type": "baseSuggest"
+                        }
+                      ],
                       "fields": [
                         {
-                          "id": "credit:sum:1",
-                          "value": "50050",
+                          "id": "suggestHolder:1",
                           "type": "text",
-                          "title": "Выбор суммы взноса",
-                          "style": "info",
-                          "validators": [
-                            {
-                              "type": "minValue",
-                              "value": "1",
-                              "message": "Сумма перевода должна быть меньше нуля"
-                            },
-                            {
-                              "type": "maxValue",
-                              "value": "10000",
-                              "message": "Сумма перевода не может превышать 10 000 руб."
-                            }
-                          ]
+                          "format": "checkbox",
+                          "referenceId": "suggestRef"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "CoreFieldSet",
+                      "title": "Заголовок виджета",
+                      "description": "Description",
+                      "fields": [
+                        {
+                          "id": "suggestText:1",
+                          "type": "text",
+                          "style": "card",
+                          "title": "Текстовое поле",
+                          "description": "Описание",
+                          "readonly": false
                         }
                       ]
                     }
                   ],
                   "footer": [
-                     
+                    {
+                      "type": "CoreButtons",
+                      "events": [
+                        {
+                          "cmd": "EVENT",
+                          "title": "Продолжить",
+                          "description": "Переход на следующий экран"
+                        }
+                      ]
+                    }
                   ]
                 }
-              ]
+              ],
+              "references": {
+                "suggestRef": {
+                  "items": [
+                    {
+                      "value": "suggest:1",
+                      "title": "FullSuggest:1",
+                      "properties": {
+                        "titleValueUI": "Предложение 1 - titleValueUI",
+                        "titleValueAcc": "Предложение 1 - titleValueAcc",
+                        "descriptionValueUI": "Предложение 1 - descriptionValueUI",
+                        "descriptionValueAcc": "Предложение 1 - descriptionValueAcc",
+                        "shortValueUI": "Предложение 1 - shortValueUI",
+                        "shortValueAcc": "Предложение 1 - shortValueAcc",
+                        "fullValueUI": "Предложение 1 - fullValueUI",
+                        "fullValueAcc": "Предложение 1 - fullValueAcc",
+                        "style": "card",
+                        "deletable": true,
+                        "selected": false
+                      }
+                    },
+                    {
+                      "value": "suggest:1",
+                      "title": "ShortSuggest:2",
+                      "properties": {
+                        "shortValueUI": "Предложение 2",
+                        "fullValueUI": "Предложение 2",
+                        "descriptionValueUI": "descriptionValueUI",
+                        "selected": false,
+                        "style": "card"
+                      }
+                    },
+                    {
+                      "value": "suggest:1",
+                      "title": "ShortSuggest:3",
+                      "properties": {
+                        "titleValueUI": "hortSuggest:3",
+                        "shortValueUI": "Предложение 3",
+                        "fullValueUI": "Предложение 3",
+                        "descriptionValueUI": "descriptionValueUI",
+                        "style": "card",
+                        "deletable": true
+                      }
+                    },
+                    {
+                      "value": "suggest:1",
+                      "title": "ShortSuggest:4",
+                      "properties": {
+                        "titleValueUI": "hortSuggest:4",
+                        "shortValueUI": "Предложение 4",
+                        "fullValueUI": "Предложение 4",
+                        "descriptionValueUI": "descriptionValueUI",
+                        "style": "card",
+                        "deletable": true
+                      }
+                    },
+                    {
+                      "value": "г. Москва, ул. Центральный проезд Хорошевского Серебрянного Бора */*б под *, кв *",
+                      "title": "ShortSuggest:4",
+                      "properties": {
+                        "titleValueUI": "hortSuggest:5",
+                        "shortValueUI": "г. Москва, ул. Центральный проезд Хорошевского Серебрянного Бора */*б под *, кв *",
+                        "fullValueUI": "г. Москва, ул. Центральный проезд Хорошевского Серебрянного Бора */*б под *, кв *",
+                        "descriptionValueUI": "descriptionValueUI",
+                        "style": "card"
+                      }
+                    }
+                  ]
+                }
+              }
             }
           }
         }
