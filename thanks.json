@@ -5,152 +5,178 @@
       "card": {
         "type": "workflow",
         "payload": {
-          "success": true,
-          "body": {
-            "result": "SUCCESS",
-            "pid": "80c30504-e9ac-4f63-9d9c-f31cce9f5ae5",
-            "flow": "Example",
-            "state": "paymentInfo",
-            "output": {
-              "screens": [
+         
+  "success": true,
+  "body": {
+    "result": "SUCCESS",
+    "pid": "80c30504-e9ac-4f63-9d9c-f31cce9f5ae5",
+    "flow": "Example",
+    "state": "paymentInfo",
+    "output": {
+      "screens": [
+        {
+          "title": "Пример",
+          "description": "Пример description",
+          "header": [
+            {
+              "type": "CoreNavBar",
+              "title": "Данные о взносе",
+              "events": [
                 {
-                  "title": "Пример",
-                  "description": "Пример description",
-                  "header": [
-                    {
-                      "type": "CoreNavBar",
-                      "title": "Данные о взносе",
-                      "events": [
-                        {
-                          "cmd": "EXIT",
-                          "uri": "Диплинк на предыдущий экран",
-                          "title": "На предыдущий экран",
-                          "description": "Переход на предыдущий экран"
-                        }
-                      ]
-                    }
-                  ],
-                  "widgets": [
-                    {
-                      "type": "CoreSuggest",
-                      "strategies": [
-                        {
-                          "fieldLookupId": "suggestText:1",
-                          "type": "baseSuggest"
-                        }
-                      ],
-                      "fields": [
-                        {
-                          "id": "suggestHolder:1",
-                          "type": "text",
-                          "format": "checkbox",
-                          "referenceId": "suggestRef"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "CoreFieldSet",
-                      "title": "Заголовок виджета",
-                      "description": "Description",
-                      "fields": [
-                        {
-                          "id": "suggestText:1",
-                          "type": "text",
-                          "style": "card",
-                          "title": "Текстовое поле",
-                          "description": "Описание",
-                          "readonly": false
-                        }
-                      ]
-                    }
-                  ],
-                  "footer": [
-                    {
-                      "type": "CoreButtons",
-                      "events": [
-                        {
-                          "cmd": "EVENT",
-                          "title": "Продолжить",
-                          "description": "Переход на следующий экран"
-                        }
-                      ]
-                    }
-                  ]
+                  "cmd": "EXIT",
+                  "uri": "Диплинк на предыдущий экран",
+                  "title": "На предыдущий экран",
+                  "description": "Переход на предыдущий экран"
+                }
+              ]
+            }
+          ],
+          "widgets": [
+            {
+              "type": "CoreSuggest",
+              "strategies": [
+                {
+                  "fieldLookupId": "suggestText:1",
+                  "type": "baseSuggest"
                 }
               ],
-              "references": {
-                "suggestRef": {
-                  "items": [
-                    {
-                      "value": "suggest:1",
-                      "title": "FullSuggest:1",
-                      "properties": {
-                        "titleValueUI": "Предложение 1 - titleValueUI",
-                        "titleValueAcc": "Предложение 1 - titleValueAcc",
-                        "descriptionValueUI": "Предложение 1 - descriptionValueUI",
-                        "descriptionValueAcc": "Предложение 1 - descriptionValueAcc",
-                        "shortValueUI": "Предложение 1 - shortValueUI",
-                        "shortValueAcc": "Предложение 1 - shortValueAcc",
-                        "fullValueUI": "Предложение 1 - fullValueUI",
-                        "fullValueAcc": "Предложение 1 - fullValueAcc",
-                        "style": "card",
-                        "deletable": true,
-                        "selected": false
-                      }
-                    },
-                    {
-                      "value": "suggest:1",
-                      "title": "ShortSuggest:2",
-                      "properties": {
-                        "shortValueUI": "Предложение 2",
-                        "fullValueUI": "Предложение 2",
-                        "descriptionValueUI": "descriptionValueUI",
-                        "selected": false,
-                        "style": "card"
-                      }
-                    },
-                    {
-                      "value": "suggest:1",
-                      "title": "ShortSuggest:3",
-                      "properties": {
-                        "titleValueUI": "hortSuggest:3",
-                        "shortValueUI": "Предложение 3",
-                        "fullValueUI": "Предложение 3",
-                        "descriptionValueUI": "descriptionValueUI",
-                        "style": "card",
-                        "deletable": true
-                      }
-                    },
-                    {
-                      "value": "suggest:1",
-                      "title": "ShortSuggest:4",
-                      "properties": {
-                        "titleValueUI": "hortSuggest:4",
-                        "shortValueUI": "Предложение 4",
-                        "fullValueUI": "Предложение 4",
-                        "descriptionValueUI": "descriptionValueUI",
-                        "style": "card",
-                        "deletable": true
-                      }
-                    },
-                    {
-                      "value": "г. Москва, ул. Центральный проезд Хорошевского Серебрянного Бора */*б под *, кв *",
-                      "title": "ShortSuggest:4",
-                      "properties": {
-                        "titleValueUI": "hortSuggest:5",
-                        "shortValueUI": "г. Москва, ул. Центральный проезд Хорошевского Серебрянного Бора */*б под *, кв *",
-                        "fullValueUI": "г. Москва, ул. Центральный проезд Хорошевского Серебрянного Бора */*б под *, кв *",
-                        "descriptionValueUI": "descriptionValueUI",
-                        "style": "card"
-                      }
-                    }
-                  ]
+              "fields": [
+                {
+                  "id": "suggestHolder:1",
+                  "type": "text",
+                  "format": "checkbox",
+                  "referenceId": "suggestRef"
                 }
+              ]
+            },
+            {
+              "type": "CoreFieldSet",
+              "title": "TitleOfWidget",
+              "description": "Description",
+              "fields": [
+                {
+                  "id": "suggestText:1",
+                  "type": "text",
+                  "style": "card",
+                  "title": "TitleOfField",
+                  "description": "Description",
+                  "readonly": false
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "type": "CoreButtons",
+              "events": [
+                {
+                  "cmd": "EVENT",
+                  "title": "Продолжить",
+                  "description": "Переход на следующий экран"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "references": {
+        "suggestRef": {
+          "items": [
+            {
+              "value": "test1 - value",
+              "title": "test1 - title",
+              "properties": {
+                "titleValueUI": "test1 - titleValueUI",
+                "titleValueAcc": "test1 - titleValueAcc",
+                "descriptionValueUI": "test1 - descriptionValueUI",
+                "descriptionValueAcc": "test1 - descriptionValueAcc",
+                "shortValueUI": "test1 - shortValueUI",
+                "shortValueAcc": "test1 - shortValueAcc",
+                "fullValueUI": "test1 - fullValueUI",
+                "fullValueAcc": "test1 - fullValueAcc",
+                "style": "card",
+                "deletable": true,
+                "selected": false
+              }
+            },
+            {
+              "value": "suggest:2",
+              "title": "ShortSuggest:2",
+              "properties": {
+                "shortValueUI": "123456parents",
+                "fullValueUI": "123456parents",
+                "descriptionValueUI": "descriptionValueUI",
+                "selected": false,
+                "style": "card"
+
+              }
+            },
+            {
+              "value": "test2 - value",
+              "title": "test2 - title",
+              "properties": {
+                "titleValueUI": "test2 - titleValueUI",
+                "titleValueAcc": "test2 - titleValueAcc",
+                "descriptionValueUI": "test2 - descriptionValueUI",
+                "descriptionValueAcc": "test2 - descriptionValueAcc",
+                "shortValueUI": "test2 - shortValueUI",
+                "shortValueAcc": "test2 - shortValueAcc",
+                "fullValueUI": "test2 - fullValueUI",
+                "fullValueAcc": "test2 - fullValueAcc",
+                "style": "card",
+                "deletable": true,
+                "selected": false
               }
             }
-          }
+            {
+              "value": "test3 - value",
+              "title": "test3 - title",
+              "properties": {
+                "titleValueUI": "test3 - titleValueUI",
+                "titleValueAcc": "test3 - titleValueAcc",
+                "descriptionValueUI": "test3 - descriptionValueUI",
+                "descriptionValueAcc": "test3 - descriptionValueAcc",
+                "shortValueUI": "test3 - shortValueUI",
+                "shortValueAcc": "test3 - shortValueAcc",
+                "fullValueUI": "test3 - fullValueUI",
+                "fullValueAcc": "test3 - fullValueAcc",
+                "style": "card",
+              }
+            },
+            {
+              "value": "suggest:4",
+              "title": "ShortSuggest:4",
+              "properties": {
+                "titleValueUI": "hortSuggest:4",
+                "shortValueUI": "123456par",
+                "fullValueUI": "123456par",
+                "descriptionValueUI": "descriptionValueUI",
+                "style": "card"
+              }
+            },
+            {
+              "value": "г. Москва, ул. Центральный проезд Хорошевского Серебрянного Бора */*б под *, кв *",
+              "title": "ShortSuggest:5",
+              "properties": {
+                "titleValueUI": "hortSuggest:5",
+                "shortValueUI": "г. Москва, ул. Центральный проезд Хорошевского Серебрянного Бора */*б под *, кв *",
+                "fullValueUI": "г. Москва, ул. Центральный проезд Хорошевского Серебрянного Бора */*б под *, кв *",
+                "descriptionValueUI": "descriptionValueUI",
+                "style": "card"
+              }
+            }
+          ]
         }
       }
     }
+  }
+}
+
+              }
+            
+          }
+        
+      
+    
   ]
 }
